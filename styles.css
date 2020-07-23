@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-color: blueviolet;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.flex-item-container-1 {
+    background-color: rgb(48, 9, 80);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item-container-2 {
+    background-color: rgb(48, 9, 58);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item-container-3 {
+    background-color: rgb(48, 9, 80);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.square {
+    height: 6.25rem;
+    width: 6.25rem;
+    background-color: #fff;
+    border-radius: 0.625rem;
+    border: solid cyan 0.625rem;
+}
+
+.odd {
+    animation: odd 10s infinite linear;
+}
+
+.even {
+    animation: even 12s infinite linear;
+}
+
+@keyframes odd {
+    from {
+      -webkit-transform: rotateZ(0deg)
+    }
+    to {
+      -webkit-transform: rotateZ(360deg)
+    }
+  }
+  @keyframes even {
+    from {
+      -webkit-transform: rotateZ(360deg)
+    }
+    to {
+      -webkit-transform: rotateZ(0deg)
+    }
+  }
